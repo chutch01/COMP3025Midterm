@@ -15,11 +15,26 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBOutlet weak var Item1Amount: UILabel!
+    @IBOutlet weak var Item2Amount: UILabel!
+    @IBOutlet weak var Item3Amount: UILabel!
+    @IBOutlet weak var Item4Amount: UILabel!
+    @IBOutlet weak var Item5Amount: UILabel!
+    @IBOutlet weak var ListNameTextField: UITextField!
 
+    @IBOutlet weak var ListItem1TextField: UITextField!
 
+    @IBOutlet weak var ListItem2TextField: UITextField!
+
+    @IBOutlet weak var ListItem3TextField: UITextField!
+    
+    @IBOutlet weak var ListItem4TextField: UITextField!
+    
+    @IBOutlet weak var ListItem5TextField: UITextField!
+    
+    
+    
+    
+    
 }
 
