@@ -32,6 +32,59 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ListItem5TextField: UITextField!
     
+    @IBAction func SaveButton(sender: UIButton) {
+    }
+    
+    func minusAmount(){
+        
+    }
+    
+    func plusAmount(){
+        
+    }
+    
+    
+    
+    
+    @IBAction func CancelButton(sender: UIButton) {
+    }
+    
+    @IBAction func MinusButtonItem1(sender: UIButton) {
+    }
+   
+    @IBAction func MinusButtonItem2(sender: UIButton) {
+    }
+    
+    @IBAction func MinusButtonItem3(sender: UIButton) {
+    }
+    
+    @IBAction func MinusButtonItem4(sender: UIButton) {
+    }
+    @IBAction func MinusButtonItem5(sender: UIButton) {
+    }
+    @IBAction func PlusButtonItem1(sender: UIButton) {
+    }
+    
+    @IBAction func PlusButtonItem2(sender: UIButton) {
+    }
+    @IBAction func PlusButtonItem3(sender: UIButton) {
+    }
+    
+    @IBAction func PlusButtonItem4(sender: UIButton) {
+    }
+    @IBAction func PlusButtonItem5(sender: UIButton) {
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
