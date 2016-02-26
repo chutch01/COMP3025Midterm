@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var Item1Value = 0
+    var Item2Value = 0
+    var Item3Value = 0
+    var Item4Value = 0
+    var Item5Value = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,21 +41,81 @@ class ViewController: UIViewController {
     @IBAction func SaveButton(sender: UIButton) {
     }
     
-    func minusAmount(){
-        
-    }
-    
-    func plusAmount(){
-        
-    }
-    
-    
-    
     
     @IBAction func CancelButton(sender: UIButton) {
+        ListNameTextField.text = ""
+        ListItem1TextField.text = ""
+        ListItem2TextField.text = ""
+        ListItem3TextField.text = ""
+        ListItem4TextField.text = ""
+        ListItem5TextField.text = ""
+        
+        Item1Amount.text = "0"
+        Item2Amount.text = "0"
+        Item3Amount.text = "0"
+        Item4Amount.text = "0"
+        Item5Amount.text = "0"
+        
+        Item1Value = 0
+        Item2Value = 0
+        Item3Value = 0
+        Item4Value = 0
+        Item5Value = 0
+        
+    }
+    @IBAction func PlusButtonItem1(sender: UIButton) {
+        
+        if(Item1Value < 99){
+        Item1Value += 1
+        Item1Amount.text = String(Item1Value)
+        }
+        else{
+           Item1Value = 0
+            Item1Amount.text = String(Item1Value)
+        }
+        
+    }
+    
+    @IBAction func PlusButtonItem2(sender: UIButton) {
+        if(Item2Value < 99){
+            Item2Value += 1
+            Item2Amount.text = String(Item2Value)
+        }
+        else{
+            Item2Value = 0
+            Item2Amount.text = String(Item2Value)
+
+        }
+    }
+    @IBAction func PlusButtonItem3(sender: UIButton) {
+        if(Item3Value < 99){
+            Item3Value += 1
+            Item3Amount.text = String(Item3Value)
+        }
+        else{
+            Item3Value = 0
+            Item3Amount.text = String(Item3Value)
+            
+        }
+
+    }
+    
+    @IBAction func PlusButtonItem4(sender: UIButton) {
+    }
+    @IBAction func PlusButtonItem5(sender: UIButton) {
     }
     
     @IBAction func MinusButtonItem1(sender: UIButton) {
+        
+        if(Item1Value == 0){
+            Item1Value = 99
+            Item1Amount.text = String(Item1Value)
+            
+        }
+        else{
+            Item1Value -= 1
+            Item1Amount.text = String(Item1Value)
+        }
     }
    
     @IBAction func MinusButtonItem2(sender: UIButton) {
@@ -62,18 +128,7 @@ class ViewController: UIViewController {
     }
     @IBAction func MinusButtonItem5(sender: UIButton) {
     }
-    @IBAction func PlusButtonItem1(sender: UIButton) {
-    }
-    
-    @IBAction func PlusButtonItem2(sender: UIButton) {
-    }
-    @IBAction func PlusButtonItem3(sender: UIButton) {
-    }
-    
-    @IBAction func PlusButtonItem4(sender: UIButton) {
-    }
-    @IBAction func PlusButtonItem5(sender: UIButton) {
-    }
+
     
     
     
